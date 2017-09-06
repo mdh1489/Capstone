@@ -1,0 +1,44 @@
+INSERT INTO industry (industryType)
+VALUES ('Agriculture & Forestry/Wildlife');
+
+INSERT INTO industry (industryType)
+VALUES ('Business & Information');
+
+INSERT INTO industry (industryType)
+VALUES ('Construction/Utilities/Contracting');
+
+INSERT INTO industry (industryType)
+VALUES ('Education');
+
+INSERT INTO industry (industryType)
+VALUES ('Finance & Insurance');
+
+INSERT INTO industry (industryType)
+VALUES ('Food & Hospitality');
+
+INSERT INTO industry (industryType)
+VALUES ('Gaming');
+
+INSERT INTO industry (industryType)
+VALUES ('Health Services');
+
+INSERT INTO industry (industryType)
+VALUES ('Motor Vehicle');
+
+INSERT INTO industry (industryType)
+VALUES ('Natural Resources/Environmental');
+
+INSERT INTO industry (industryType)
+VALUES ('Other');
+
+INSERT INTO industry (industryType)
+VALUES ('Personal Services');
+
+INSERT INTO industry (industryType)
+VALUES ('Real Estate & Housing');
+
+INSERT INTO industry (industryType)
+VALUES ('Safety/Security & Legal');
+
+INSERT INTO industry (industryType)
+VALUES ('Transportation');

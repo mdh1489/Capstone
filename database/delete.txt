@@ -1,0 +1,7 @@
+SET FOREIGN_KEY_CHECKS = 0;
+drop table zip;
+drop table industry;
+drop table business; 
+drop table customer;
+drop table ad;
+SET FOREIGN_KEY_CHECKS = 1;

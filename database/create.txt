@@ -1,0 +1,51 @@
+CREATE TABLE zip (
+zipCode int NOT NULL,
+city varchar(255) NOT NULL,
+state varchar(2) NOT NULL,
+CONSTRAINT PRIMARY KEY (zipCode) 
+);
+
+CREATE TABLE industry (
+industryID int NOT NULL AUTO_INCREMENT,
+industryType varchar(63) NOT NULL,
+CONSTRAINT PRIMARY KEY (industryID) 
+);
+
+CREATE TABLE business ( 
+business_ID int NOT NULL AUTO_INCREMENT,
+    Name varchar(63) NOT NULL,
+    hours varchar(63),
+    telephone varchar(12),
+    email varchar(63),
+    password varchar(63),
+    address varchar(63),
+    industry int,
+    zipCode int,
+ CONSTRAINT PRIMARY KEY (business_ID), 
+ CONSTRAINT FOREIGN KEY (industry) REFERENCES industry(industryID),
+ CONSTRAINT FOREIGN KEY (zipCode) REFERENCES zip(zipCode)
+);
+
+create table customer (
+    customer_ID int NOT NULL AUTO_INCREMENT,
+    fname varchar(63),
+    lname varchar(63) NOT NULL,
+    email varchar(63),
+    password varchar(63),
+    zipCode int,
+    industry int,
+    CONSTRAINT PRIMARY KEY (customer_ID),
+    CONSTRAINT FOREIGN KEY (industry) REFERENCES industry(industryID),
+    CONSTRAINT FOREIGN KEY (zipCode) REFERENCES zip(zipCode)
+);
+
+CREATE TABLE ad (
+    AdID int NOT NULL AUTO_INCREMENT,
+    busID int NOT NULL,
+    date date NOT NULL,
+    displayLength int(3) NOT NULL,
+    endDate date,
+    text varchar(1023),
+    CONSTRAINT PRIMARY KEY (AdID),
+    CONSTRAINT FOREIGN KEY (busID) REFERENCES business(business_ID)
+);
