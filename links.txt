@@ -1,0 +1,18 @@
+Links Used on 9/5/17
+---------------------------------------------------------------------------------------------------
+Access Denied Load Data Infile (SQL) -
+https://stackoverflow.com/questions/2221335/access-denied-for-load-data-infile-in-mysql
+
+List of US ZipCodes (Database) -
+https://www.aggdata.com/node/86
+
+Set Foreign Key Checks (SQL) -
+http://www.sqlines.com/mysql/set_foreign_key_checks
+
+SQL Datatypes (SQL) -
+https://www.w3schools.com/sql/sql_datatypes.asp
+
+Creating an ER Diagram (Database) -
+https://erdplus.com/
+---------------------------------------------------------------------------------------------------
+
