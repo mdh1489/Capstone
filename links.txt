@@ -1,5 +1,5 @@
 Links Used on 9/5/17
----------------------------------------------------------------------------------------------------
+====================-------------------------------------------------------------------------------
 Access Denied Load Data Infile (SQL) -
 https://stackoverflow.com/questions/2221335/access-denied-for-load-data-infile-in-mysql
 
@@ -15,4 +15,20 @@ https://www.w3schools.com/sql/sql_datatypes.asp
 Creating an ER Diagram (Database) -
 https://erdplus.com/
 ---------------------------------------------------------------------------------------------------
+Links Used on 9/10/17
+=====================------------------------------------------------------------------------------
+Back image:
+https://www.pexels.com/photo/healthy-vegetables-hand-gardening-9301/
 
+Web Template:
+https://templated.co/projection
+
+Customers Image: 
+https://www.pexels.com/photo/architecture-buildings-business-car-331990/
+
+Business Image: 
+https://www.pexels.com/photo/man-planting-plant-169523/
+
+CSS Icons: 
+http://astronautweb.co/snippet/font-awesome/
+---------------------------------------------------------------------------------------------------
