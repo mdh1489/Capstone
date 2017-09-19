@@ -1,0 +1,8 @@
+<?php 
+$goLocaldb = @mysql_connect("localhost", "huneycuttmd1", "900662918"); 
+if(!$goLocaldb) 
+{ 
+    echo( "Connection to database server failed <br>"); 
+    exit( ); 
+}
+?>
