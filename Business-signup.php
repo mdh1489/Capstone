@@ -38,53 +38,45 @@
 			<form method="post" action="insertbusiness.php">
 				<div class="row uniform">
 					<div class="6u$ 12u$(xsmall)">
-						<input type="text" name="name" id="name" value="" placeholder="Name" />
+						<input type="text" name="name" id="name" value="" placeholder="Name" required/>
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="email" name="email" id="email" value="" placeholder="Email" />
-					<?php
-                       include("dbase.txt");
-                       mysql_select_db("huneycuttmd1", $goLocaldb) or die ("Error");
-					   $businessE = "select email from business where email = email";
-                       $result = @mysql_query($businessE) or die ("Error Connecting");
-                       if (mysql_num_rows($result) != 0)
-					   {
-							echo "email already exists";
-					   }
-					 ?>
+						<input type="email" name="email" id="email" value="" placeholder="Email" required/>
 					</div>
                     <div class="6u$ 12u$">
                      <div class="select-wrapper">
-                     <select name = "industry">
+                     <select name = "industry" >
                     <?php
                        include("dbase.txt");
                        mysql_select_db("huneycuttmd1", $goLocaldb) or die ("Error");
                        $businessq = "select industryID, industryType from industry";
                        $result = @mysql_query($businessq) or die ("Error Connecting");
+
                        while($r = mysql_fetch_array($result))
                        {
                          echo "<option value=".$r['industryID'].">" . $r['industryType']."</option>";
                        }               
                     ?>
                                                                                                                                                                                                                                              
-
+					</div>
+					</div>
 					<!-- Break -->
 					<div class="6u$ 12u$(xsmall)">
 						<input type="text" name="address" id="address" value="" placeholder="address" />
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="text" name="zip" id="zip" value="" placeholder="Zip" />
+						<input type="text" name="zip" id="zip" value="" placeholder="Zip" required/>
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="password" name="password" id="password" value="" placeholder="password" />
+						<input type="password" name="password" id="password" value="" placeholder="password" required/>
 					</div>
 					<div class="6u$ 12u$(xsmall)">
 						<input type="tel" name="phone" id="phone" value="" placeholder="phone number" />
 					</div>
 					<!-- Break -->
 					<div class="6u$ 12u$(small)">
-						<input type="checkbox" id="demo-human" name="demo-human" >
-						<label for="demo-human">I am a human and not a robot</label>
+						<input type="checkbox" id="human" name="human" required>
+						<label for="human">I am a human and not a robot</label>
 					</div>
 					<!-- Break -->
 					<div class="6u$">
