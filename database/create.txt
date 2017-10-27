@@ -42,10 +42,12 @@ create table customer (
 CREATE TABLE ad (
     AdID int NOT NULL AUTO_INCREMENT,
     busID int NOT NULL,
+	zipCo int NOT NULL,
     date date NOT NULL,
     displayLength int(3) NOT NULL,
     endDate date,
     text varchar(1023),
     CONSTRAINT PRIMARY KEY (AdID),
+	CONSTRAINT FOREIGN KEY (zipCo) REFERENCES business(zipCode),
     CONSTRAINT FOREIGN KEY (busID) REFERENCES business(business_ID)
 );

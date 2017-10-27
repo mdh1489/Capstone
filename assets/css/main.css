@@ -240,7 +240,7 @@
 	}
 
 	.row.uniform > * > :first-child {
-		margin-top: 0;
+		margin-top:0;
 	}
 
 	.row.uniform > * > :last-child {
@@ -1568,7 +1568,7 @@
 	}
 
 	body {
-		background: #fff;
+		background: #666;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1655,10 +1655,12 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #555;
-		font-weight: 400;
-		line-height: 1.5;
-		margin: 0 0 1em 0;
+		color: #6CC091;
+		font-weight: 800;
+		line-height: 2;
+		margin: 1 1 .2em 1;
+		text-decoration: none;
+		text-align: center;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1974,7 +1976,7 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: #666;
 		border-radius: 10px;
 		border: none;
 		border: solid 2px #8dcca9;
@@ -2066,10 +2068,10 @@
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #9a9a9a;
+			color: #6cc091;
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1em;
+			font-size: 1.25em;
 			font-weight: 400;
 			padding-left: 2.4em;
 			padding-right: 0.75em;
@@ -2450,14 +2452,14 @@
 	}
 
 	table {
-		margin: 0 0 2em 0;
-		width: 100%;
+		margin: 0 0 1em 0;
+		width: 50%;
 	}
 
 		table tbody tr {
-			border: solid 1px #dbdbdb;
-			border-left: 0;
-			border-right: 0;
+			border: solid 3px #dbdbdb;
+			border-left: solid 3px #dbdbdb;
+			border-right: solid 3px #dbdbdb;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
@@ -2469,11 +2471,11 @@
 		}
 
 		table th {
-			color: #555;
-			font-size: 0.9em;
-			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			color: #dbdbdb;
+			font-size: 1.3em;
+			font-weight: 800;
+			padding: 0 0em 00em 0em;
+			text-align: center;
 		}
 
 		table thead {
@@ -2481,7 +2483,7 @@
 		}
 
 		table tfoot {
-			border-top: solid 2px #dbdbdb;
+			border-top: solid 2px #555;
 		}
 
 		table.alt {
@@ -2489,7 +2491,7 @@
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #dbdbdb;
+				border: solid 1px #555;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2957,6 +2959,7 @@
 			color: #fff;
 			margin: 0;
 			font-size: 1.5em;
+			padding: 0;
 		}
 
 		#banner .icon {
@@ -3106,6 +3109,7 @@
 			}
 
 		}
+		
 
 /* Footer */
 

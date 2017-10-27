@@ -10,12 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css">
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body class="subpage">
 
@@ -57,26 +51,26 @@
                          echo "<option value=".$r['industryID'].">" . $r['industryType']."</option>";
                        }               
                     ?>
-                                                                                                                                                                                                                                             
-					</div>
+					  </select>                                                                                                                                                                                                                         
+					  </div>
 					</div>
 					<!-- Break -->
 					<div class="6u$ 12u$(xsmall)">
-						<input type="text" name="address" id="address" value="" placeholder="address" />
+						<input type="text" name="address" id="address" value="" placeholder="Address" />
 					</div>
 					<div class="6u$ 12u$(xsmall)">
 						<input type="text" name="zip" id="zip" value="" placeholder="Zip" required/>
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="password" name="password" id="password" value="" placeholder="password" required/>
+						<input type="password" name="password" id="password" value="" placeholder="Password" required/>
 					</div>
 					<div class="6u$ 12u$(xsmall)">
-						<input type="tel" name="phone" id="phone" value="" placeholder="phone number" />
+						<input type="tel" name="phone" id="phone" value="" placeholder="Phone Number" />
 					</div>
 					<!-- Break -->
 					<div class="6u$ 12u$(small)">
 						<input type="checkbox" id="human" name="human" required>
-						<label for="human">I am a human and not a robot</label>
+						<label for="human">Currently In Testing Do Not Hit Submit</label>
 					</div>
 					<!-- Break -->
 					<div class="6u$">

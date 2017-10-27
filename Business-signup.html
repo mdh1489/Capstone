@@ -41,16 +41,16 @@
 						<div class="6u$ 12u$">
 						<div class="select-wrapper">
 							<select name = "industry">
-						     <?php
-                               include("dbase.txt");
-                               mysql_select_db("huneycuttmd1", $goLocaldb) or die ("Error");
-                               $businessq = "select industryType from industry";
-                               $result = @mysql_query($businessq) or die ("Error Connecting");
-                               while($r = mysql_fetch_array($result))
-                               {
-                                 echo "<option value='$industryType'>" . $r['industryType']. "</option>";
-                               }               
-                              ?> 
+						    <?php
+							include("dbase.txt");
+							mysql_select_db("huneycuttmd1", $goLocaldb) or die ("Error");
+							$businessq = "select industryID, industryType from industry";
+							$result = @mysql_query($businessq) or die ("Error Connecting");
+							while($r = mysql_fetch_array($result))
+							{
+								echo "<option value=".$r['industryID'].">" . $r['industryType']."</option>";
+							}               
+                    ?>
 					
 
 					<!-- Break -->
