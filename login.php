@@ -17,17 +17,19 @@
 		$_SESSION['businessID'] = $businessID[0];
 		$_SESSION['name'] = $businessName[0];
 		$_SESSION['zip'] = $businessZip[0];
-		echo '<META HTTP-EQUIV=REFRESH CONTENT="1; bizportal.php?'.SID.'">';
+		echo '<META HTTP-EQUIV=REFRESH CONTENT="1; Business/bizportal.php?'.SID.'">';
 	}
 	else if (!(mysql_num_rows($resultC) == 0))
 	{
 		$customerName = @mysql_fetch_array(@mysql_query("select fname from customer where email= '" . $_POST[email] . "';"));
 		$customerZip = @mysql_fetch_array(@mysql_query("select zipCode from customer where email= '" . $_POST[email] . "';"));
+		$customerID = @mysql_fetch_array(@mysql_query("select customer_ID from customer where email= '" . $_POST[email] . "';"));
 		$_SESSION['name'] = $customerName[0];
 		$_SESSION['email'] = $_POST[email];
 		$_SESSION['zip'] = $customerZip[0];
+		$_SESSION['custID'] = $customerID[0];
 		$url='custportal.html';
-		echo '<META HTTP-EQUIV=REFRESH CONTENT="1; custportal.php?'.SID.'">';
+		echo '<META HTTP-EQUIV=REFRESH CONTENT="1; Customer/custportal.php?'.SID.'">';
 	}
 	
 	else
@@ -36,3 +38,4 @@
 		$url='login.html';
 		echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 	}
+?>

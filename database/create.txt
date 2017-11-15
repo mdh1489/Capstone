@@ -12,18 +12,25 @@ CONSTRAINT PRIMARY KEY (industryID)
 );
 
 CREATE TABLE business ( 
-business_ID int NOT NULL AUTO_INCREMENT,
+	business_ID int NOT NULL AUTO_INCREMENT,
     Name varchar(63) NOT NULL,
-    hours varchar(63),
     telephone varchar(12),
     email varchar(63),
     password varchar(63),
     address varchar(63),
     industry int,
     zipCode int,
+	busPic varchar(1023),
+    Sunhours varchar(63),
+	Monhours varchar(63),
+	Tueshours varchar(63),
+	Wedhours varchar(63),
+    Thurshours varchar(63),
+    Frihours varchar(63),
+    Sathours varchar(63),
  CONSTRAINT PRIMARY KEY (business_ID), 
  CONSTRAINT FOREIGN KEY (industry) REFERENCES industry(industryID),
- CONSTRAINT FOREIGN KEY (zipCode) REFERENCES zip(zipCode)
+ CONSTRAINT FOREIGN KEY (zipCode) REFERENCES zip(zipCode),
 );
 
 create table customer (
@@ -46,6 +53,7 @@ CREATE TABLE ad (
     date date NOT NULL,
     displayLength int(3) NOT NULL,
     endDate date,
+	adpic varchar(1023),
     text varchar(1023),
     CONSTRAINT PRIMARY KEY (AdID),
 	CONSTRAINT FOREIGN KEY (zipCo) REFERENCES business(zipCode),
